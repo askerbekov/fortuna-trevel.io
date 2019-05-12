@@ -1,0 +1,9 @@
+header {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  text-align: center;
+  font-size: 2em;
+  color: white;
+  text-shadow: 0 2px 3px #0000007d;
+}
