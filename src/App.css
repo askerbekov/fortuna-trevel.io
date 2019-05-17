@@ -1,14 +1,9 @@
 body {
   margin: 0;
   padding: 0 15px 80px;
-  background-image: radial-gradient(
-    circle farthest-corner at -10% -5%,
-    rgb(23, 173, 18) 0%,
-    rgb(26, 119, 14) 30%,
-    #e2c628 80%,
-    #248fff 100%
-  );
-  background-size: 100% 4000px;
+  background-image: url("https://previews.123rf.com/images/byheaven/byheaven1408/byheaven140800028/30728413-view-to-ruh-ordo-cultural-complex-near-issyk-kul-lake-at-mountains-background-in-cholpon-ata-kyrgyzs.jpg");
+  background-size: 100% 100vh;
+  background-repeat: no-repeat;
 
   font-family: "Open Sans", sans-serif;
 }

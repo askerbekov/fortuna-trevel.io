@@ -7,6 +7,7 @@ import About from "./About/About";
 import Services from "./Services/Services";
 import Portfolio from "./Portfolio/Portfolio";
 import Contacts from "./Contacts/Contacts";
+import Footer from "./Footer/Footer";
 
 class App extends Component {
   render() {
@@ -21,6 +22,7 @@ class App extends Component {
           <Route path="/portfolio" component={Portfolio} />
           <Route path="/contact" component={Contacts} />
         </BrowserRouter>
+        <Footer />
       </div>
     );
   }
