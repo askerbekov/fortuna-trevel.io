@@ -45,7 +45,7 @@ class Contacts extends Component {
           <input type="tel" size="20" placeholder="номер телефона WhatsApp" />
           <input type="text" size="20" placeholder="имя" />
           <input type="text" size="20" placeholder="gmail adress" />
-          <datalist id="tours">{toursList}</datalist>
+          <datalist id="tours">({toursList})</datalist>
           <h1>0 СОМ</h1>
         </section>
         <footer />
