@@ -17,14 +17,15 @@ class Contacts extends Component {
     let tours = [];
 
     for (let id in this.state.tours05) {
-      tours.push({ id, ...this.state.tours05 });
+      tours.push({ id, ...this.state.tours05[id] });
     }
+
     let toursList = tours.map(tour => (
       // <Article key={article.id} {...article} />
       <option>{tour.place}</option>
     ));
     // console.log(this.state.tours05, tours, toursList);
-    console.log(tours);
+    console.log(toursList);
     return (
       <div className="Contacts">
         <header>
