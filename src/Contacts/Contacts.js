@@ -47,7 +47,7 @@ class Contacts extends Component {
           <input type="text" size="20" placeholder="имя" />
           <input type="text" size="20" placeholder="gmail adress" />
           <datalist id="tours">({toursList})</datalist>
-          <h1> {tour.place}0 СОМ</h1>
+          <h1> {tours.place}0 СОМ</h1>
         </section>
         <footer />
       </div>
