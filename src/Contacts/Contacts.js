@@ -4,7 +4,8 @@ import axios from "../axios";
 
 class Contacts extends Component {
   state = {
-    tours05: {}
+    tours: [],
+    tourPrice: 0
   };
   componentDidMount() {
     axios.get("tours.json").then(response => {
@@ -12,6 +13,10 @@ class Contacts extends Component {
       // console.log(response.data);
     });
   }
+
+  check = event => {
+    console.log(event.target);
+  };
 
   render() {
     let tours = [];
@@ -42,12 +47,17 @@ class Contacts extends Component {
         </section>
         <section id="content-input">
           <input type="number" max="30" size="20" placeholder="сколько людей" />
-          <input list="tours" size="20" placeholder="куда" />
+          <input
+            list="tours"
+            size="20"
+            placeholder="куда"
+            onFocus={this.check}
+          />
           <input type="tel" size="20" placeholder="номер телефона WhatsApp" />
           <input type="text" size="20" placeholder="имя" />
           <input type="text" size="20" placeholder="gmail adress" />
           <datalist id="tours">({toursList})</datalist>
-          <h1> {tours.place}0 СОМ</h1>
+          <h1> {this.state.tourPrice} c </h1>
         </section>
         <footer />
       </div>
