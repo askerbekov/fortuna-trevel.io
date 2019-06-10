@@ -15,7 +15,7 @@ class Contacts extends Component {
   }
 
   check = event => {
-    console.log(event.target);
+    console.log(event.target.value);
   };
 
   render() {
@@ -27,7 +27,7 @@ class Contacts extends Component {
 
     let toursList = tours.map(tour => (
       // <Article key={article.id} {...article} />
-      <option>{tour.place}</option>
+      <option onChange={this.check}>{tour.place}</option>
     ));
     // console.log(this.state.tours05, tours, toursList);
     console.log(toursList);
@@ -46,12 +46,18 @@ class Contacts extends Component {
           </article>
         </section>
         <section id="content-input">
-          <input type="number" max="30" size="20" placeholder="сколько людей" />
+          <input
+            type="number"
+            min="1"
+            max="30"
+            size="20"
+            placeholder="сколько людей"
+          />
           <input
             list="tours"
             size="20"
             placeholder="куда"
-            onFocus={this.check}
+            onChange={this.check}
           />
           <input type="tel" size="20" placeholder="номер телефона WhatsApp" />
           <input type="text" size="20" placeholder="имя" />

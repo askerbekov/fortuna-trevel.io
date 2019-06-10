@@ -9,7 +9,7 @@ function Navigation() {
         <ul>
           <li class="home">
             <NavLink activeClassName="active" to="/">
-              Home
+              FORTUNA
             </NavLink>
           </li>
           <li class="tutorials">
