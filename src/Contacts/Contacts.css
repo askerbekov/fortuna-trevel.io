@@ -30,7 +30,10 @@ section#content-input {
   box-shadow: 0 30px 60px #0000007d;
   font-size: 1.1em;
 }
-
+section#content-input button {
+  border-radius: 15px;
+  height: 40px;
+}
 section#content input {
   list-style-type: none;
   padding-left: 0;
