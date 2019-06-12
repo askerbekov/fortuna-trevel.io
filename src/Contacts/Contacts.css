@@ -33,6 +33,10 @@ section#content-input {
 section#content-input button {
   border-radius: 15px;
   height: 40px;
+  border: 6px;
+  margin-left: 23px;
+  margin-top: 18px;
+  background-color: rgb(186, 198, 215);
 }
 section#content input {
   list-style-type: none;
